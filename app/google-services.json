@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "616679807385",
+    "project_id": "universe-d0708",
+    "storage_bucket": "universe-d0708.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616679807385:android:1b477926b09088d74ddb08",
+        "android_client_info": {
+          "package_name": "com.example.universe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdWg60YV3aA4TxnoTMkcIxNPKaCMUsTnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
