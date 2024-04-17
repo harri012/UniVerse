@@ -45,13 +45,13 @@
         </com.google.android.material.bottomappbar.BottomAppBar>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_ping"
+            android:id="@+id/fab_calendar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#D5B895"
             android:outlineAmbientShadowColor="@color/black"
-            android:contentDescription="Ping Button"
-            android:src="@drawable/ic_baseline_network_ping_24"
+            android:contentDescription="Calendar View"
+            android:src="@drawable/ic_baseline_calendar_month_24"
             android:tint="@color/white"
             app:layout_anchor="@id/navigation_bottomAppBar"
             app:maxImageSize="40dp" />

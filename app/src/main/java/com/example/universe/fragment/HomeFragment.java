@@ -1,7 +1,10 @@
 package com.example.universe.fragment;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -9,6 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.universe.R;
+import com.example.universe.card.AboutUsActivity;
+import com.example.universe.card.GradeActivity;
+import com.example.universe.card.InformationActivity;
+import com.example.universe.card.QuickNotesActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +23,12 @@ import com.example.universe.R;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+
+    CardView quickNotesCard;
+    CardView gradeCard;
+    CardView aboutCard;
+    CardView informationCard;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -60,7 +73,56 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View fragmentView = inflater.inflate(R.layout.fragment_home, container, false);
+
+        //CARDS init
+        quickNotesCard = fragmentView.findViewById(R.id.cardView1);
+        gradeCard = fragmentView.findViewById(R.id.cardView2);
+        aboutCard = fragmentView.findViewById(R.id.cardView3);
+        informationCard = fragmentView.findViewById(R.id.cardView4);
+
+
+        //CARD 1: Quick Notes Redirect
+        quickNotesCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), QuickNotesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //CARD 2: call emergency redirect
+        gradeCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), GradeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //CARD 3: aboutUs
+        aboutCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AboutUsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //CARD 4: Info
+        informationCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), InformationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Inflate the layout for this fragment
+        return fragmentView;
+
     }
 }

@@ -9,9 +9,14 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
+import com.example.universe.calendar.CalendarMonthActivity;
+import com.example.universe.card.QuickNotesActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.FirebaseApp;
 
@@ -21,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     NavController navController;
+
+    FloatingActionButton calendarButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +54,21 @@ public class MainActivity extends AppCompatActivity {
         //setup bottom nav
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
+
+
+        //when pressing calendar button
+        calendarButton = findViewById(R.id.fab_calendar);
+
+        calendarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Create an Intent to start CalendarMonthActivity
+                Intent intent = new Intent(view.getContext(), CalendarMonthActivity.class);
+
+                // Start the activity
+                view.getContext().startActivity(intent);
+            }
+        });
 
 
     }

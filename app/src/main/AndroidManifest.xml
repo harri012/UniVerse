@@ -13,8 +13,43 @@
         android:theme="@style/Theme.UniVerse"
         tools:targetApi="34">
         <activity
+            android:name=".calendar.CalendarMonthActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".card.AboutUsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".card.GradeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".card.QuickNotesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".card.InformationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".login.LoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,22 +60,16 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-
         <activity
-                android:name=".login.SignUpActivity"
-                android:exported="false" >
-                <meta-data
-                    android:name="android.app.lib_name"
-                    android:value="" />
-
+            android:name=".login.SignUpActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
-
+            android:exported="false" />
     </application>
 
 </manifest>
