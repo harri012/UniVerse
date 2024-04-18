@@ -6,6 +6,7 @@ import androidx.core.app.NavUtils;
 import android.os.Bundle;
 
 import com.example.universe.R;
+import com.example.universe.fragment.HomeFragment;
 
 public class QuickNotesActivity extends AppCompatActivity {
 

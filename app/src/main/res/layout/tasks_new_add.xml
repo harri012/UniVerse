@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.TasksNewAdd">
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:text="Save"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:textColor="@color/black"
+        android:drawablePadding="0dp"
+        android:drawableTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasks_editText" />
+
+    <EditText
+        android:id="@+id/tasks_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:background="@drawable/login_edit_text"
+        android:drawableLeft="@drawable/ic_baseline_task_24"
+        android:drawablePadding="8dp"
+        android:hint="Enter Task"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/setDueDate_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+        android:drawablePadding="8dp"
+        android:text="Set Due Date:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasks_editText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,9 +7,7 @@ import androidx.core.app.NavUtils;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -121,5 +119,9 @@ public class CalendarMonthActivity extends AppCompatActivity implements Calendar
             String message = "Selected Date " + dayText + " " + monthYearFromDate(selectedDate);
             Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void weeklyAction(View view) {
+        startActivity(new Intent(this, CalendarWeekActivity.class));
     }
 }

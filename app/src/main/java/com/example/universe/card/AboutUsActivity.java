@@ -15,18 +15,18 @@ public class AboutUsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
 
-        // Set title of toolbar
+        // Set title
         getSupportActionBar().setTitle("About Us");
 
         // Enable the back button on the action bar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-    }
 
-        //when clicking the back arrow, return to home
+    }
         @Override
         public boolean onSupportNavigateUp() {
+            // Handle the back button click
             NavUtils.navigateUpFromSameTask(this);
             return true;
         }
