@@ -10,7 +10,7 @@ Ensure that the emulator is running on Android API 34 and run the code on the em
 
 To create an account, click on the text and input new information. Then, login with new credentials.
 
-## 2. Application Sketches
+## 2. Application and Sketches
 ### 2.1 Login/Signup
 
 ![image](https://github.com/harri012/UniVerse/assets/97982249/d807bbd1-e028-447d-950d-fe2d63efbf21)
@@ -21,13 +21,19 @@ To create an account, click on the text and input new information. Then, login w
 ### 2.3 Other Fragments 
 ![image](https://github.com/harri012/UniVerse/assets/97982249/7d0e2e85-848b-4f52-8f1a-84e70c0aa4a5)
 
+### 2.4 Firebase 
+![image](https://github.com/harri012/UniVerse/assets/97982249/3ad250f6-b12b-43c9-b50d-50e159523929)
+
+![image](https://github.com/harri012/UniVerse/assets/97982249/102db10f-c4c6-4b1a-b63d-be7f17b3fbfa)
+
+
 ## 3. Demo
 The demo can be seen in the GitHub folder
 
 ## 4. Extra Notes
-The code was mostly built for user experience and focused on the front-end.
+The code was mostly built for user experience and focused on the front end.
 
-`front-end`: All Pages except for Quick Notes as it almost the same structure as tasks.
+`front end`: All Pages except for Quick Notes as it has almost the same structure as tasks.
 
-`back-end`: Login/Signup (Firebase), Auto Sign-In (Firebase), Tasks (Firebase), Calendar, Logout (Firebase)
+`back end`: Login/Signup (Firebase), Auto Sign-In (Firebase), Tasks (Firebase), Calendar, Logout (Firebase)
 
