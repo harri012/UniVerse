@@ -1,3 +1,5 @@
+//charts: https://github.com/AnyChart/AnyChart-Android
+
 package com.example.universe.fragment;
 
 import android.os.Bundle;
@@ -8,7 +10,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.anychart.AnyChart;
+import com.anychart.AnyChartView;
+import com.anychart.chart.common.dataentry.DataEntry;
+import com.anychart.chart.common.dataentry.ValueDataEntry;
+import com.anychart.charts.Pie;
 import com.example.universe.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +26,9 @@ import com.example.universe.R;
  * create an instance of this fragment.
  */
 public class FinanceFragment extends Fragment {
+    AnyChartView anyChartViewPie;
+    AnyChartView anyChartViewLine;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +74,26 @@ public class FinanceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_finance, container, false);
+        View fragmentView = inflater.inflate(R.layout.fragment_finance, container, false);
+
+        //line chart for expenses
+
+        //setup pie chart for expense
+        Pie pie = AnyChart.pie();
+        anyChartViewPie = fragmentView.findViewById(R.id.circle_chart);
+        anyChartViewPie.setChart(pie);
+
+        List<DataEntry> data = new ArrayList<>();
+        data.add(new ValueDataEntry("Income", 100000));
+        data.add(new ValueDataEntry("Extra Income", 12543));
+        data.add(new ValueDataEntry("Living Expenses", 53450));
+        data.add(new ValueDataEntry("Extra Expenses", 3213));
+
+        pie.data(data);
+
+
+
+        // Inflate the layout for this fragment
+        return fragmentView;
     }
 }

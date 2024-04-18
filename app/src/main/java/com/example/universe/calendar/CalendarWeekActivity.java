@@ -1,3 +1,4 @@
+/*
 package com.example.universe.calendar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,4 +14,4 @@ public class CalendarWeekActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_week);
     }
-}
+}*/

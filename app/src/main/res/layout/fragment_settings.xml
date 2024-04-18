@@ -1,32 +1,241 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.SettingsFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="200dp"
-        android:text="Hello Settings Fragment" />
+        android:layout_marginTop="130dp"
+        android:drawableLeft="@drawable/ic_baseline_manage_accounts_24"
+        android:text="Manage Account"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/name_editText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_edit_text"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:drawablePadding="8dp"
+        android:hint="Name Change Field"
+        android:padding="8dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/saveName_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:text="Save"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/name_editText"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/email_editText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edit_text"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="8dp"
+        android:hint="Email Change Field"
+        android:padding="8dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_editText" />
+
+
+    <Button
+        android:id="@+id/saveEmail_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:text="Save"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/email_editText"
+        app:layout_constraintTop_toBottomOf="@+id/saveName_button" />
+
+
+    <Button
+        android:id="@+id/changePassword_button"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Change Password"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_password_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_editText" />
+
+
+    <TextView
+        android:id="@+id/finance_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+        android:text="Manage Finance"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePassword_button" />
+
+    <EditText
+        android:id="@+id/money_editText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_edit_text"
+        android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+        android:drawablePadding="8dp"
+        android:hint="Enter Account Value"
+        android:padding="8dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finance_textView" />
+
+    <Button
+        android:id="@+id/saveMoney_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:text="Save"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/name_editText"
+        app:layout_constraintTop_toBottomOf="@+id/finance_textView" />
+
+    <EditText
+        android:id="@+id/allowance_editText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edit_text"
+        android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+        android:drawablePadding="8dp"
+        android:hint="Enter Weekly Allowance"
+        android:padding="8dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/money_editText" />
+
+
+    <Button
+        android:id="@+id/saveAllowance_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:text="Save"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/email_editText"
+        app:layout_constraintTop_toBottomOf="@+id/saveMoney_button" />
+
+    <EditText
+        android:id="@+id/income_editText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edit_text"
+        android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
+        android:drawablePadding="8dp"
+        android:hint="Enter Income"
+        android:padding="8dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/allowance_editText" />
+
+
+    <Button
+        android:id="@+id/saveIncome_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:text="Save"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/email_editText"
+        app:layout_constraintTop_toBottomOf="@+id/saveAllowance_button" />
+
+    <EditText
+        android:id="@+id/expense_editText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edit_text"
+        android:drawableLeft="@drawable/ic_baseline_money_off_24"
+        android:drawablePadding="8dp"
+        android:hint="Enter Expenses"
+        android:padding="8dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_editText" />
+
+
+    <Button
+        android:id="@+id/saveExpense_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:text="Save"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/email_editText"
+        app:layout_constraintTop_toBottomOf="@+id/saveIncome_button" />
+
 
     <Button
         android:id="@+id/logout_button"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="600dp"
-        android:layout_marginStart="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#cc2d35"
         android:drawableLeft="@drawable/ic_baseline_logout_24"
         android:text="Logout"
+        app:flow_horizontalAlign="center"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/expense_editText" />
 
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

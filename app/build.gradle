@@ -44,5 +44,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
     implementation 'it.xabaras.android:recyclerview-swipedecorator:1.4'
+    implementation 'com.github.AnyChart:AnyChart-Android:1.1.5'
 }
 apply plugin: 'com.google.gms.google-services'

@@ -121,7 +121,7 @@ public class CalendarMonthActivity extends AppCompatActivity implements Calendar
         }
     }
 
-    public void weeklyAction(View view) {
-        startActivity(new Intent(this, CalendarWeekActivity.class));
-    }
+//    public void weeklyAction(View view) {
+//        startActivity(new Intent(this, CalendarWeekActivity.class));
+//    }
 }
