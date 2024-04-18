@@ -2,9 +2,10 @@
 
 ## 1. Run Instructions
 To run the code, download the GitHub code and open it in Android Studios. Make sure both gradle build files are synched `build.gradle`.
-Ensure that the emulator is running on Android API 34 and run the code on the emulator.
+Ensure that the emulator is running on Android API 34 and run the code on the emulator. Also, ensure Java is at SDK 17.
 
-`Username`: test@universe.com,
+`Username`: test@universe.com
+
 `password`: testing
 
 To create an account, click on the text and input new information. Then, login with new credentials.
@@ -22,4 +23,11 @@ To create an account, click on the text and input new information. Then, login w
 
 ## 3. Demo
 The demo can be seen in the GitHub folder
+
+## 4. Extra Notes
+The code was mostly built for user experience and focused on the front-end.
+
+`front-end`: All Pages except for Quick Notes as it almost the same structure as tasks.
+
+`back-end`: Login/Signup (Firebase), Auto Sign-In (Firebase), Tasks (Firebase), Calendar, Logout (Firebase)
 
