@@ -12,7 +12,7 @@ public class GradeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_grade);
 
         // Set title of the toolbar
         getSupportActionBar().setTitle("Grade Calculator");
