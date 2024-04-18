@@ -28,7 +28,9 @@ To create an account, click on the text and input new information. Then, login w
 
 
 ## 3. Demo
-The demo can be seen in the GitHub folder
+The demo can be seen in the GitHub folder named: `UniVerse_demo_compressed.mp4`.
+
+Download the video for the demo as previous upload failed.
 
 ## 4. Extra Notes
 The code was mostly built for user experience and focused on the front end.
